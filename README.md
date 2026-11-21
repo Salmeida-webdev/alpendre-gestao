@@ -49,3 +49,7 @@ A aplicação publica a pasta `public`. O projeto final deve ser conectado ao re
 ## Requisitos para produção com dados reais
 
 Esta versão demonstra os fluxos e a arquitetura; não deve ser usada para armazenar dados reais antes de configurar autenticação, políticas de autorização, uploads privados, monitoramento e recuperação, gestão de consentimentos e retenção, além de testar os controles de segurança. A demonstração pública não solicita senha nem oferece acesso a registros de produção.
+
+## Segurança e arquitetura
+
+Leia [SECURITY.md](SECURITY.md), [docs/arquitetura.md](docs/arquitetura.md) e [docs/operacao.md](docs/operacao.md) para conhecer os limites desta demonstração, os controles já presentes e os requisitos antes de armazenar dados reais.
