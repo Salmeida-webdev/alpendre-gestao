@@ -212,7 +212,7 @@ export default {
           const body = await parseBody(request);
           const record = cleanRecord({ ...JSON.parse(current.payload_json || '{}'), ...body, module: current.module }, { module: current.module, title: current.title, status: current.status, amount_cents: current.amount_cents, ...JSON.parse(current.payload_json || '{}') });
           await writeRecord(env, sessionHash, recordId, record, 'upsert');
-          return json({ record: decodeRecord({ record_id: recordId, ...record, payload_json: record.payloadJson, created_at: current.created_at, updated_at: new Date().toISOString() }), demo: true }, 200, origin);
+          return json({ record: decodeRecord({ record_id: recordId, ...record, amount_cents: record.amountCents, payload_json: record.payloadJson, created_at: current.created_at, updated_at: new Date().toISOString() }), demo: true }, 200, origin);
         } catch (error) {
           const message = error.message || 'invalid_input';
           const status = message === 'demo_write_limit' ? 429 : message === 'payload_too_large' ? 413 : 400;
