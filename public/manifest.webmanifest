@@ -1,0 +1,11 @@
+{
+  "name": "Alpendre Gestão",
+  "short_name": "Alpendre",
+  "description": "Gestão para escritórios de arquitetura",
+  "lang": "pt-BR",
+  "start_url": "/#gestao",
+  "display": "standalone",
+  "background_color": "#f5f2f6",
+  "theme_color": "#35143f",
+  "icons": [{"src":"/assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

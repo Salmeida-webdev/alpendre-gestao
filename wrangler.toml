@@ -1,0 +1,10 @@
+name = "alpendre-gestao-api"
+main = "cloudflare/worker.js"
+compatibility_date = "2026-11-21"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "alpendre-gestao-prod"
+database_id = "8c7ea8da-49f3-44e1-a911-d2417dfa579f"
+migrations_dir = "cloudflare/migrations"
